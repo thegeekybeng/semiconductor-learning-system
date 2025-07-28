@@ -13,7 +13,7 @@
 Due to ChromaDB compatibility issues with Python 3.13 on Streamlit Cloud, use the simplified version:
 
 1. **Main File**: Use `streamlit_demo_simple.py` (NOT `streamlit_demo.py` or `demo_launcher.py`)
-2. **Python Version**: 3.11+ 
+2. **Python Version**: 3.11+
 3. **Dependencies**: Reduced set - works without ChromaDB
 
 ## Environment Variables to Set in Streamlit Cloud:
@@ -44,6 +44,7 @@ OPENAI_API_KEY=your-api-key-here
 ## What's Different in the Simplified Version:
 
 ✅ **Includes:**
+
 - Full Streamlit UI with all 6 pages
 - Sample semiconductor knowledge base
 - RAG query simulation
@@ -52,6 +53,7 @@ OPENAI_API_KEY=your-api-key-here
 - System monitoring dashboard
 
 ❌ **Excluded (due to compatibility):**
+
 - ChromaDB vector database (uses in-memory sample data)
 - Web crawling functionality (shows simulated data)
 - File-based persistence (uses session state)
@@ -66,11 +68,13 @@ OPENAI_API_KEY=your-api-key-here
 ## Troubleshooting:
 
 If you see "Port 8501 is already in use":
+
 - Make sure you're using `streamlit_demo_simple.py` as the main file
 - Check that `demo_launcher.py` is not being used
 - Streamlit Cloud manages ports automatically
 
 If you see ChromaDB errors:
+
 - Make sure you're using `streamlit_demo_simple.py` (not `streamlit_demo.py`)
 - The simplified version doesn't require ChromaDB
 
